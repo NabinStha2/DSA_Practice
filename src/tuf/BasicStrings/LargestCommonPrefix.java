@@ -1,8 +1,8 @@
 package tuf.BasicStrings;
 
-class Solution {
+class LargestCommonPrefix {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        LargestCommonPrefix solution = new LargestCommonPrefix();
         String[] tests = {"flower", "flow", "flight"};
         String[] tests1 = {"dog", "racecar", "car"};
         String[] tests2 = {"interspecies", "interstellar", "interstate"};
