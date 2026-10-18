@@ -6,12 +6,18 @@ class Solution {
         String[] tests = {"flower", "flow", "flight"};
         String[] tests1 = {"dog", "racecar", "car"};
         String[] tests2 = {"interspecies", "interstellar", "interstate"};
+        String[] tests3 = {"ab", "a"};
+        String[] tests4 = {"abc", "abcd"};
         System.out.println("Result: " + solution.longestCommonPrefix(tests));
         System.out.println("Result: " + solution.longestCommonPrefix(tests1));
         System.out.println("Result: " + solution.longestCommonPrefix(tests2));
-        System.out.println("Result: " + solution.longestCommonPrefix1(tests));
-        System.out.println("Result: " + solution.longestCommonPrefix1(tests1));
-        System.out.println("Result: " + solution.longestCommonPrefix1(tests2));
+        System.out.println("Result: " + solution.longestCommonPrefix(tests3));
+        System.out.println("Result: " + solution.longestCommonPrefix(tests4));
+        System.out.println("Result1: " + solution.longestCommonPrefix1(tests));
+        System.out.println("Result1: " + solution.longestCommonPrefix1(tests1));
+        System.out.println("Result1: " + solution.longestCommonPrefix1(tests2));
+        System.out.println("Result1: " + solution.longestCommonPrefix1(tests3));
+        System.out.println("Result1: " + solution.longestCommonPrefix1(tests4));
     }
 
     public String longestCommonPrefix(String[] str) {
@@ -23,7 +29,7 @@ class Solution {
         for (String s : str) {
             while (!s.startsWith(prefix)) {
                 prefix = prefix.substring(0, prefix.length() - 1);
-                System.out.println(prefix);
+//                System.out.println(prefix);
             }
         }
 
