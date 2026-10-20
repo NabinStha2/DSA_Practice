@@ -10,10 +10,12 @@ class RotateString {
         System.out.println(rotateString.rotateString("abcde", "fghij")); // false
     }
 
+    // 0(n) time and 0(n) space
 //    public boolean rotateString(String s, String goal) {
 //        return s.length() == goal.length() && (s + s).contains(goal);
 //    }
 
+    // 0(n^2) time and 0(1) space
     public boolean rotateString(String s, String goal) {
         if (s.length() != goal.length()) {
             return false;

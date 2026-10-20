@@ -12,6 +12,7 @@ class ValidAnagram {
         System.out.println(validAnagram.anagramStrings("a", "a")); // true
     }
 
+    // 0(n) time and 0(n) space
 //    public boolean anagramStrings(String s, String t) {
 //        if(s.length() != t.length()){
 //            return false;
@@ -19,7 +20,7 @@ class ValidAnagram {
 //
 //        Map<Character,Integer> map = new HashMap<>();
 //
-//        for(char ch : s.toCharArray()){
+//        for(char ch : s.toCharArray()){ // 0(n) time
 //            map.put(ch, map.getOrDefault(ch, 0) + 1);
 //        }
 //
@@ -38,6 +39,7 @@ class ValidAnagram {
 //        return true;
 //    }
 
+    // 0(n^2) time and 0(n) space
     public boolean anagramStrings(String s, String t) {
         if (s.length() != t.length()) {
             return false;
@@ -45,9 +47,9 @@ class ValidAnagram {
 
         Map<Character, Integer> map = new HashMap<>();
 
-        for (char ch : s.toCharArray()) {
+        for (char ch : s.toCharArray()) { // 0(n) time
             if (!map.containsKey(ch)) {
-                int ind = t.indexOf(ch);
+                int ind = t.indexOf(ch); // 0(n) time
                 if (ind == -1) {
                     return false;
                 } else {
