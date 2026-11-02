@@ -1,5 +1,15 @@
 package tuf.Arrays;
 
+/**
+ * Find the missing number in an array containing n distinct numbers taken from 0, 1, 2, ..., n.
+ */
+
+/*
+ * Approach:
+ * 1. Calculate the expected sum of numbers from 0 to n using the formula n*(n+1)/2.
+ * 2. Calculate the actual sum of the numbers in the array.
+ * 3. The missing number is the difference between the expected sum and the actual sum.
+ */
 class FindMissingNumber {
     public static void main(String[] args) {
         int[] nums = {0, 1, 3};

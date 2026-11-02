@@ -1,5 +1,16 @@
 package tuf.Arrays;
 
+/**
+ * This class provides a method to find the second largest element in an array of integers.
+ */
+
+/* Algorithm:
+1. Initialize two variables, largest and secLargest, to the minimum possible integer value.
+2. Iterate through the array of integers.
+   a. If the current element is greater than largest, update secLargest to be largest and update largest to be the current element.
+   b. If the current element is less than largest but greater than secLargest, update secLargest to be the current element.
+3. After iterating through the array, check if secLargest is still the minimum possible integer value. If it is, return -1 to indicate that there is no second largest element. Otherwise, return secLargest.
+*/
 class SecondLargestElement {
     public static void main(String[] args) {
         int[] nums = {5, 2, 9, 1, 5, 6};

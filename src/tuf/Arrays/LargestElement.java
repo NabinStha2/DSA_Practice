@@ -1,5 +1,14 @@
 package tuf.Arrays;
 
+/**
+ * This class provides a method to find the largest element in an array of integers.
+ */
+
+/*
+ * The `largestElement` method iterates through the given array and keeps track of the largest number found.
+ * It returns the largest number after checking all elements in the array.
+ */
+
 class LargestElement {
     public static void main(String[] args) {
         int[] nums = {5, 2, 9, 1, 5, 6};

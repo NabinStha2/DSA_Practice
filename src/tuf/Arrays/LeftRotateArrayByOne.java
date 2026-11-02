@@ -1,5 +1,16 @@
 package tuf.Arrays;
 
+/**
+ * Left rotate an array by one position.
+ */
+
+/* Algorithm to left rotate an array by one position:
+1. Store the first element of the array in a temporary variable.
+2. Shift all elements of the array one position to the left.
+3. Place the temporary variable (the original first element) at the end of the array.
+Time Complexity: O(n), where n is the number of elements in the array.
+Space Complexity: O(1), as we are using a constant amount of extra space.
+*/
 class LeftRotateArrayByOne {
     public static void main(String[] args) {
         int[] nums = {5, 2, 9, 1, 5, 6};

@@ -1,5 +1,18 @@
 package tuf.Arrays;
 
+/**
+ * Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.
+ * Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+ */
+
+/* Algorithm:
+ * 1. Initialize a pointer j to 0, which will keep track of the position of the last unique element found.
+ * 2. Iterate through the array using a pointer i starting from index 1.
+ * 3. For each element nums[i], compare it with nums[j].
+ *    - If they are different, increment j and update nums[j] to nums[i].
+ *    - If they are the same, continue to the next iteration.
+ * 4. After the loop, return j + 1 as the new length of the array without duplicates.
+ */
 class RemoveDuplicatesFromSortedArray {
 
     public static void main(String[] args) {
