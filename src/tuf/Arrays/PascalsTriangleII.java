@@ -14,11 +14,10 @@ class PascalsTriangleII {
         int[] arr = new int[r];
         int ans = 1;
         arr[0] = 1;
-        for (int c = 1; c < r - 1; c++) {
+        for (int c = 1; c < r; c++) {
             ans = ans * (r - c) / c;
             arr[c] = ans;
         }
-        arr[r - 1] = 1;
         return arr;
     }
 }
